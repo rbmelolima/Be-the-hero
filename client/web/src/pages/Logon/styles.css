@@ -3,6 +3,7 @@
     max-width: 1120px;
     height: 100vh;
     margin: 0 auto;
+    padding: 0 15px;
 
     display: flex;
     align-items: center;
@@ -35,10 +36,31 @@
     transition: all 0.2;
 }
 
-.logon-container section.form form a svg{
+.logon-container section.form form a svg {
     margin-right: 10px;
 }
 
-.logon-container section.form form a:hover{
+.logon-container section.form form a:hover {
     opacity: 0.8;
+}
+
+@media screen and (max-width: 1080px) {
+    img.heroes-img {
+        display: none;
+    }
+
+    img.logo-img {
+        width: 100%;
+    }
+
+    .logon-container {
+        align-items: center;
+        align-content: center;
+    }
+
+    .logon-container section.form {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
 }
